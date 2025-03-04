@@ -1,0 +1,238 @@
+@media (min-width: 1024px){
+  nav {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px){
+  nav {
+    flex-basis: 33.3333%;
+  }
+}
+
+@font-face{
+  font-family: 'Bickham';
+  src: url('../fonts/bickham/bickhamScriptProBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Bonnycastle';
+  src: url('../fonts/bonnyCastle/Bonnycastle Web/Bonnycastle.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Millionaire';
+  src: url('../fonts/millionaire/Millionaire-Script.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'cormorantGaramond';
+  src: url('../fonts/cormorantGaramond/CormorantGaramond-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #eaeaea;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+nav {
+  position: fixed;
+  margin-top: 2.5rem;
+  top: 0;
+  z-index: 10;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+header {
+  margin-top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+header.main-header{
+  margin-top: 2.5rem;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  position: relative;
+}
+
+.small-header {
+  height: 2.5rem; /* Adjustable height */
+  background-color: #003d60; /* Light background color */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9; /* Ensure it is below the main header */
+  font-size: 0.875rem; /* Adjust text size as needed */
+  color: #ffffff; /* Text color */
+  padding-left: 40px;
+}
+
+.subheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* No extra padding */
+  margin: 0; /* No extra margin */
+  background-color: transparent; /* Transparent background to avoid visual change */
+  position: relative;
+}
+
+/* Navigation items container */
+.nav-left {
+  display: flex;
+  flex: 1;
+}
+
+/* Navigation list styling */
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+/* Navigation list items styling */
+.nav-list li {
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Navigation button styling */
+.nav-button {
+  display: inline-flex;
+  margin-left: -5px;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', serif;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  background-color: var(--background, #fff);
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #f0f0f0; /* Light background on hover */
+}
+
+.nav-button span {
+  word-break: break-word;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.nav-list li:first-child {
+  margin-left: 2.1rem; /* Adjust this value for more or less space */
+}
+
+/* Title container styling */
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Title text styling */
+.title-text {
+  letter-spacing: 6px;
+  font-size: 50px;
+  font-family: 'Bickham', cursive;
+  font-weight: 100px;
+  text-align: center;
+}
+
+.title-sub-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'cormorantGaramond', serif;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.img-land-main{
+  width: 105.52rem; 
+  height: calc(100vh - 10rem); 
+  margin-top: 5rem; 
+  object-fit: cover; 
+  clip-path: inset(0 0 .5rem 0);
+  display: block;
+}

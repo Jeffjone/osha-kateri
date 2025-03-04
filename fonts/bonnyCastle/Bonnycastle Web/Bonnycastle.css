@@ -1,0 +1,12 @@
+/* Webfont: Bonnycastle */@font-face {
+    font-family: 'Bonnycastle';
+    src: url('Bonnycastle.eot'); /* IE9 Compat Modes */
+    src: url('Bonnycastle.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Bonnycastle.woff') format('woff'), /* Modern Browsers */
+         url('Bonnycastle.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Bonnycastle.svg#Bonnycastle') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

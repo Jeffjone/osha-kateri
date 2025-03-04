@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Greenhouse ORYKD';
+    src: url('Greenhouse-ORYKD.eot');
+    src: local('Greenhouse ORYKD'), local('Greenhouse-ORYKD'),
+        url('Greenhouse-ORYKD.eot?#iefix') format('embedded-opentype'),
+        url('Greenhouse-ORYKD.woff2') format('woff2'),
+        url('Greenhouse-ORYKD.woff') format('woff'),
+        url('Greenhouse-ORYKD.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
